@@ -6,14 +6,24 @@
 //   reverseInt(500) === 5
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
+//Solution 1 using if statement
+function reverseInt(n) {
+    const reversed = n;
+    n.toString().split('').reverse().join('');
+    if (n < 0) {
+        return parseInt(reversed) * -1;
+    }
+    return parseInt(reversed);
+}
+
+module.exports = reverseInt;
+
+//Solution 2 using built in Math object
 
 function reverseInt(n) {
-    parseInt(n.toString().split('').reverse().join(''));
-    if (Math.sign(n) = 1)
-    return n;
-    else {
-        return
-    }
+    const reversed = n;
+    n.toString().split('').reverse().join('');
+    return parseInt(reversed) * Math.sign(n);
 }
 
 module.exports = reverseInt;
