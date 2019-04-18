@@ -8,7 +8,9 @@ multiples of both three and five print 'fizzbuzz'.
 //a multiple of both three and five - modulo operator helps this!
 
 function fizzBuzz(n) {
-
+    for (let i = 1; i<=n; i++) {
+        
+    }
 }
 
 module.exports = fizzBuzz;
