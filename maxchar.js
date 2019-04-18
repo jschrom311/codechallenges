@@ -8,7 +8,16 @@ maxChar ("apple 1231111") === "1"
 //and counts as values.  Then go through object and return greatest key value.
 
 function maxChar(str) {
+    const charMap = {};
 
+    for (let char of str) {
+        if (charMap[char]) {
+            charMap[char]++;
+        }
+        else {
+            charMap[char] = 1;
+        }
+    }
 }
 
 module.exports = maxChar;
