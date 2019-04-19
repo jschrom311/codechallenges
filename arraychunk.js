@@ -25,3 +25,11 @@ function chunk(array, size) {
 }
 
 module.exports = chunk;
+
+//Solution 2
+
+function chunk(array, size) {
+
+}
+
+module.exports = chunk;
