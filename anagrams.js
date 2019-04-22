@@ -8,7 +8,7 @@ punctuation.  Consider capital letters the same as lower case.
 //Use RegEx
 /*Ex:
 const word = "HI THERE!!!"
-word.replace(/[^\w]/g, "")
+word.replace(/[^\w]/g, "").toLowerCase();
 */
 
 function anagrams (stringA, stringB) {
