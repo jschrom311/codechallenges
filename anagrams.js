@@ -5,6 +5,12 @@ in the same quantity.  Only consider characters, not spaces or
 punctuation.  Consider capital letters the same as lower case.
 */
 
+//Use RegEx
+/*Ex:
+const word = "HI THERE!!!"
+word.replace(/[^\w]/g, "")
+*/
+
 function anagrams (stringA, stringB) {
 
 }
