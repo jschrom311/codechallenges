@@ -3,6 +3,9 @@ Write a function that accepts a string.  The function should capitalize the firs
 of each word in the string then return the capitalized string.
 */
 
+//Hints: one solution will use a for loop
+//The other will use methods from js library(slice, toUpperCase, join)
+
 function capitalize(str) {
 
 }
