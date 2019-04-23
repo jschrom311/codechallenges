@@ -24,7 +24,7 @@ function anagrams (stringA, stringB) {
             return false;
         }
     }
-    
+
     return true;
 }
 
@@ -36,6 +36,14 @@ function buildCharMap(str) {
     }
 
     return charMap;
+}
+
+module.exports = anagrams;
+
+//2nd solution
+
+function anagrams(stringA, stringB) {
+
 }
 
 module.exports = anagrams;
