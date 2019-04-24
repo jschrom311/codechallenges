@@ -12,12 +12,12 @@ steps(3) =
 '## '
 '###'
 */
-
+//Soln1 (iterative)
 function steps(n) {
-    for (row = 0; row > n; row++) {
+    for (let row = 0; row < n; row++) {
         let stair = '';
 
-        for (column = 0; column < n; column++) {
+        for (let column = 0; column < n; column++) {
             if (column <= row) {
                 stair += '#';
             }
@@ -25,8 +25,8 @@ function steps(n) {
                 stair += ' ';
             }
         }
+        console.log(stair);
     }
-    console.log(stair);
 }
 
 module.exports = steps;
