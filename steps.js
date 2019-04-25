@@ -30,3 +30,11 @@ function steps(n) {
 }
 
 module.exports = steps;
+
+//Soln 2 (recursive)
+
+function steps(n) {
+
+}
+
+module.exports = steps;
