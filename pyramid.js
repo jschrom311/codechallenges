@@ -35,3 +35,11 @@ function pyramid(n) {
 }
 
 module.exports = pyramid;
+
+//Recursive solution
+
+function pyramid(n) {
+
+}
+
+module.exports = pyramid;
