@@ -16,9 +16,15 @@ pyramid(3)
 
 */
 
-
+//Iterative solution
 function pyramid(n) {
+    for (let row = 0; row < n; row++) {
+        let level = '';
 
+        for (let column = 0; column < 2 * n - 1; column++) {
+
+        }
+    }
 }
 
 module.exports = pyramid;
