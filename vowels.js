@@ -18,3 +18,10 @@ function vowels(str) {
 }
 
 module.exports = vowels;
+
+//RegEx soln
+function vowels(str) {
+    
+}
+
+module.exports = vowels;
