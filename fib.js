@@ -20,3 +20,26 @@ function fib(n) {
 }
 
 module.exports = fib;
+
+//recursive soln
+function fib(n) {
+
+}
+
+module.exports = fib;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
