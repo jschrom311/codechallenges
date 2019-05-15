@@ -4,6 +4,16 @@ with methods 'add' and 'remove'.  Adding to the queue should
 store an element until it is removed.
 */
 
-class Queue{}
+class Queue {
+    constructor() {
+        this.data = [];
+    }
+    add(record) {
+        this.data.unshift(record);
+    }
+    remove() {
+        return this.data.pop();
+    }
+}
 
 module.exports = Queue;
