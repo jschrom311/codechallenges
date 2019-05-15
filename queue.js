@@ -17,3 +17,23 @@ class Queue {
 }
 
 module.exports = Queue;
+
+/*Directions for weave.js--
+Implement a 'peek' method in this queue class.  Peek should
+return the last element (the next one to be returned) from
+the queue without removing it.
+*/
+
+class Queue {
+    constructor() {
+        this.data = [];
+    }
+    add(record) {
+        this.data.unshift(record);
+    }
+    remove() {
+        return this.data.pop();
+    }
+}
+
+module.exports = Queue;
