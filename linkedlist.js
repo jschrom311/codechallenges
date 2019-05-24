@@ -113,6 +113,10 @@
         }
         previous.next = previous.next.next;
      }
+     insertAt(data, index) {
+         
+     }
+
  }
 
  module.exports = {Node, LinkedList};
