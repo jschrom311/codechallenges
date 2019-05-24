@@ -114,7 +114,14 @@
         previous.next = previous.next.next;
      }
      insertAt(data, index) {
-         
+         if (!this.head) {
+             this.head = new Node(data);
+             return;
+         }
+         if (index === 0) {
+             this.head = new Node(data, this.head);
+             return;
+         }
      }
 
  }
