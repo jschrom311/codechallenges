@@ -18,7 +18,8 @@
      }
      
      insertFirst(data) {
-         this.head = new Node(data, this.head);
+         //this.head = new Node(data, this.head);
+         this.insertAt(data, 0);
      }
 
      size() {
@@ -32,11 +33,12 @@
      }
 
      getFirst() {
-         return this.head;
+         //return this.head;
+         return this.getAt(0);
      }
 
      getLast() {
-         if (!this.head) {
+         /*if (!this.head) {
              return null;
          }
          let node = this.head;
@@ -46,6 +48,8 @@
              }
              node = node.next;
          }
+         */
+        return this.getAt(this.size() - 1);
      }
 
      clear() {
