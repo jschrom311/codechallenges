@@ -7,7 +7,8 @@
  * property to null.
  * 
  * Implement breadth first search traversal and depth first search traversal
- * on the tree class.
+ * on the tree class.  Each method should accept a function taht gets called
+ * with each element in the tree.
  */
 
  class Node {
