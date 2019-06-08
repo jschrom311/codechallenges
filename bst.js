@@ -6,6 +6,10 @@
  * Implement the insert method for the Node class. Insert should accept
  * an argument data, then create and insert a new node at the appropriate
  * location in the tree.
+ * 
+ * Implement the 'contains' method for the Node class.  Contains should
+ * accpet a data argument and return the Node in the tree with the same
+ * value.  Otherwise, return null.
  */
 
  class Node {
