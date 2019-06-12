@@ -12,6 +12,14 @@
     if (min !== null && node.data < min) {
         return false;
     }
+    if (node.left && !validate(node.left, min, node.data)) {
+        return false;
+    }
+    if (node.right && !validate(node.right, max, node.data)) {
+        return false;
+    }
+
+    return true;
  }
 
  module.exports = validate;
