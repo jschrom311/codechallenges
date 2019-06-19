@@ -8,3 +8,24 @@
 #
 
 def count_primes(num):
+    #check for 0 or 1 input
+    if num < 2:
+        return 0
+    
+    #2 or greater
+    #store prime numbers
+    primes = [2]
+    #counter going to input num
+    x = 3
+    #x going through every number up to input num
+    while x <= num:
+        #check if x prime - can use for y in primes
+        for y in range(3,x,2):
+            if x%y == 0:
+                x += 2
+                break
+        else:
+            primes.append(x)
+            x += 2
+    print(primes)
+    return len(primes)
