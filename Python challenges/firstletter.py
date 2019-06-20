@@ -3,3 +3,5 @@
 #
 
 st = 'Create a list of the first letters of ever word in this string'
+
+[word[0] for word in st.split()]
