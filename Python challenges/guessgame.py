@@ -35,13 +35,12 @@ while True:
     if guess < 1 or guess > 100:
         print('OUT OF BOUNDS! Please try again: ')
         continue
-    break
 #While loop to compare guess to number
     if guess == num:
         print(f'Correct, you took only {len(guesses)} guesses!')
         break
     #add guess to list if incorrect
-    guess.append(guess)
+    guesses.append(guess)
     #Check guesses after first guess
     if guesses[-2]:  
         if abs(num-guess) < abs(num-guesses[-2]):
