@@ -6,5 +6,17 @@
 #XO("xooxx") => false
 #XO("ooxXm") => true
 
+#Iterative solution
 def xo(s):
-    return True
+    xcount = 0
+    ocount = 0
+    for char in s.lower():
+        if char == 'x':
+            xcount +=1
+        elif char == 'o':
+            ocount +=1
+    return xcount == ocount
+
+#Much better solution :)
+def xo(s):
+    return s.lower().count('x') == s.lower().count('o')
