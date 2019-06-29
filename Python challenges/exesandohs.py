@@ -18,5 +18,5 @@ def xo(s):
     return xcount == ocount
 
 #Much better solution :)
-def xo(s):
+def exoh(s):
     return s.lower().count('x') == s.lower().count('o')
