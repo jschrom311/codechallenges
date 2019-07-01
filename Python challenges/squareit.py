@@ -4,4 +4,4 @@
 #
 
 def square_digits(num):
-    pass
+    return int(''.join((str(int(n)**2) for n in str(int(num)))))
