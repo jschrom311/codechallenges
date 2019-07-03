@@ -11,4 +11,7 @@ Please keep in mind that the test cases ensure that the number of people in the 
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.'''
 
 def number(bus_stops):
-    pass
+    bus_total = 0
+    for i in bus_stops:
+        bus_total += i[0] - i[1]
+    return bus_total
