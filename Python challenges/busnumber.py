@@ -15,3 +15,8 @@ def number(bus_stops):
     for i in bus_stops:
         bus_total += i[0] - i[1]
     return bus_total
+
+#cleaner solution
+
+def total(bus_stops):
+    return sum([stop[0] - stop[1] for stop in bus_stops])
