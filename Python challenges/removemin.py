@@ -2,5 +2,10 @@
 
 Don't change the order of the elements that are left.'''
 
+#solution works, except does not pass "Do not mutate the original array/list"
 def remove_smallest(numbers):
-    raise NotImplementedError("TODO: remove_smallest")
+    if not numbers:
+        return []
+
+    numbers.remove(min(numbers))
+    return numbers
