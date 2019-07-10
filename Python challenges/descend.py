@@ -13,3 +13,7 @@ def descending_order(num):
     sortedlist = sorted(numlist, reverse=True)
     sortedstring = ''.join(sortedlist)
     return int(sortedstring)
+
+#clean one-liner
+def Descending_Order(num):
+    return int("".join(sorted(str(num), reverse=True)))
