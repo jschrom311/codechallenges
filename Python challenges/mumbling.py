@@ -8,3 +8,6 @@ accum("cwAt") -> "C-Ww-Aaa-Tttt"'''
 
 def accum(s):
     return '-'.join([str(s[i]*(i+1)).capitalize() for i in range(len(s))])
+#another clean one-liner
+def mumble(s):
+    return '-'.join(c.upper() + c.lower() * i for i, c in enumerate(s))
