@@ -9,3 +9,10 @@ def remove_smallest(numbers):
 
     numbers.remove(min(numbers))
     return numbers
+
+#working solution
+def remove_minimum(numbers):
+    a = numbers[:]
+    if a:
+        a.remove(min(a))
+    return a
