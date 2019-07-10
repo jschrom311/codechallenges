@@ -7,4 +7,9 @@
 #input: 12385469 => 98654321
 
 def descending_order(num):
-    pass
+    numlist = []
+    for i in range(len(str(num))):
+        numlist.append(str(num)[i])
+    sortedlist = sorted(numlist, reverse=True)
+    sortedstring = ''.join(sortedlist)
+    return int(sortedstring)
